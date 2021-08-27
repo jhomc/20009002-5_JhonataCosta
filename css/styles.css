@@ -1,0 +1,185 @@
+:root {
+    --main-color: #7159c1;
+    --secondary-color: #f7df1d;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(16, 233, 204);
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+main {
+    height: 100%;
+}
+
+.headerContainer {
+    display: flex;
+    max-width: 1120px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.links {
+    font-size: 22px;
+}
+
+.links a + a {
+    margin-left: 32px;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgba(24, 23, 23, 0.651);
+    position: relative;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.links a:hover {
+    color: var(--main-color);
+}
+
+.links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after{
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+.mainContainer {
+    width: 1120px;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.productContainer {
+    display: flex;
+    padding: 12px;
+}
+
+.productContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
+}
+.productName {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color:#1A202C
+}
+
+h1 {
+    margin-top:12px
+}
+.productDescription {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+span {
+    font-weight: bold;
+}
+
+img {
+    border-radius: 18px
+}
+.productContent a {
+    text-decoration: none;
+}
+
+footer {
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#1A202C;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.mainText   {
+    color: white;
+    margin: 50px auto;
+
+}
+
+/* == FORM == */
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1120px;
+    margin: 120px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 50%
+}
+
+input {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+button {
+    width: 150px;
+    height: 24px;
+    margin-top: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: rgb(16, 233, 204);
+    color: #1A202C;
+    font-weight: bold;
+
+
+    align-self: center;
+}
+
+.location {
+    display: block;
+    margin: 0 auto;
+    width: 1120px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.element {
+    padding-top: 20px;
+}
